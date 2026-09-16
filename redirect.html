@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghubungkan... — Kopi Kalcer WiFi</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="2; url=$(link-redirect)">
+    <script>
+        function doRedirect() {
+            setTimeout(function() {
+                const isLocal = window.location.hostname === 'localhost' || 
+                                window.location.hostname === '127.0.0.1' || 
+                                window.location.protocol === 'file:';
+                if (isLocal) {
+                    window.location.href = "status.html";
+                } else {
+                    window.location.href = "$(link-redirect)";
+                }
+            }, 2000);
+        }
+    </script>
+</head>
+<body onload="doRedirect()">
+
+<div class="app-container" style="justify-content: center; align-items: center; padding: 24px;">
+    <!-- Main Card -->
+    <main class="main-card" style="flex: none; width: 100%; border: 1.5px solid var(--border-color); border-radius: 16px; padding: 32px 20px; text-align: center;">
+        
+        <div class="portal-welcome" style="margin-bottom: 20px;">
+            <h2 class="portal-title">Sedang Menyeduh... ☕</h2>
+            <p class="portal-subtitle">Menghubungkan kamu ke WiFi Kopi Kalcer</p>
+        </div>
+
+        <!-- Loading Dots -->
+        <div class="loading-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <p style="font-size: 11px; color: var(--text-muted); font-weight: 600;">
+            Jika tidak dialihkan otomatis, <a href="status.html" style="color: var(--primary); text-decoration: underline; font-weight: 700;">klik di sini</a>.
+        </p>
+    </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout — Kopi Kalcer WiFi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <!-- Status bar / Header -->
+    <header class="app-header">
+        <div class="header-title-wrapper">
+            <svg class="wifi-pulse-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M1.371 8.143a.75.75 0 0 1 1.022-.24 15.618 15.618 0 0 1 19.214 0 .75.75 0 1 1-.782 1.28 14.118 14.118 0 0 0-17.65 0 .75.75 0 0 1-1.804-1.04ZM4.143 11.23a.75.75 0 0 1 1.002-.276 11.118 11.118 0 0 1 13.71 0 .75.75 0 1 1-.84 1.246 9.618 9.618 0 0 0-11.87 0 .75.75 0 0 1-1.002-.97ZM6.963 14.28a.75.75 0 0 1 .978-.328 6.618 6.618 0 0 1 8.118 0 .75.75 0 1 1-.896 1.206 5.118 5.118 0 0 0-6.222 0 .75.75 0 0 1-.978-.878ZM9.75 17.25a.75.75 0 0 1 1.097-.66 2.13 2.13 0 0 1 2.306 0 .75.75 0 1 1-.818 1.258.63.63 0 0 0-.67 0 .75.75 0 0 1-.915-.598Z" clip-rule="evenodd" />
+            </svg>
+            <span>☕ Kopi Kalcer</span>
+        </div>
+        <span class="header-status">OFFLINE</span>
+    </header>
+
+    <!-- Carousel Banner -->
+    <div class="carousel-container">
+        <!-- Slide 1 -->
+        <div class="carousel-slide active">
+            <img src="cafe-bg.png" alt="Cafe Interior" class="carousel-image">
+            <div class="carousel-content">
+                <h3 class="carousel-title">Specialty Coffee</h3>
+                <p class="carousel-desc">Racikan terbaik dari barista kami</p>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+            <img src="cafe-bg-2.png" alt="Latte Art" class="carousel-image">
+            <div class="carousel-content">
+                <h3 class="carousel-title">Ngopi. Nongkrong.</h3>
+                <p class="carousel-desc">Tetap Connected dengan WiFi cepat</p>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+            <img src="cafe-bg-3.png" alt="Work From Cafe" class="carousel-image">
+            <div class="carousel-content">
+                <h3 class="carousel-title">Work From Cafe</h3>
+                <p class="carousel-desc">WiFi cepat buat kerja, nugas, atau scroll</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Running Text Ticker -->
+    <div class="marquee-container">
+        <div class="marquee-text">☕ Terima kasih sudah mampir di Kopi Kalcer — Silakan login kembali untuk menikmati WiFi cepat sambil ngopi! ☕</div>
+    </div>
+
+    <!-- Main Card -->
+    <main class="main-card">
+        <!-- Welcoming Text -->
+        <div class="portal-welcome">
+            <h2 class="portal-title">Sesi <span>Selesai</span></h2>
+            <p class="portal-subtitle">Terima kasih telah mampir dan menggunakan WiFi Kopi Kalcer</p>
+        </div>
+
+        <!-- Receipt Table -->
+        <div class="receipt-table" style="margin-bottom: 24px;">
+            <div class="receipt-row">
+                <span class="receipt-label">User Terputus</span>
+                <span class="receipt-value">$(username)</span>
+            </div>
+            <div class="receipt-row">
+                <span class="receipt-label">Total Waktu</span>
+                <span class="receipt-value highlight">$(uptime)</span>
+            </div>
+        </div>
+
+        <!-- Return button -->
+        <a href="$(link-login)" class="btn-primary" style="text-decoration: none;">
+            Masuk Kembali
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+            </svg>
+        </a>
+
+        <!-- Footer brand logo -->
+        <footer class="brand-footer" style="margin-top: auto;">
+            &copy; 2026 Kopi Kalcer WiFi. All Rights Reserved.
+        </footer>
+    </main>
+</div>
+
+</body>
+</html>
